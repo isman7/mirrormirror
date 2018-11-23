@@ -1,8 +1,6 @@
 import numpy as np
 import cv2
-import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.style.use("default")
 
 # Let's import an Star Trek computer panel, now in color:
 panel = cv2.imread("images/PC.png")
