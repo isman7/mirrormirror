@@ -33,14 +33,3 @@ plt.figure()
 plt.imshow(kirk_matched, interpolation='none')
 plt.show()
 
-
-# Using OpenCV warping capabilities:
-kirk0 = cv2.imread("images/PC.png", cv2.IMREAD_GRAYSCALE)
-kirk2 = cv2.imread("images/PC_transformed.png", cv2.IMREAD_GRAYSCALE)
-
-plt.figure()
-plt.subplot(121)
-plt.imshow(kirk0, interpolation='none', cmap='gray')
-plt.subplot(122)
-plt.imshow(kirk2, interpolation='none', cmap='gray')
-plt.show()
