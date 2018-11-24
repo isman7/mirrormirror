@@ -58,6 +58,7 @@ plt.show()
 
 # Trying it over different images:
 def detect_face(img):
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     img_return = img.copy()
     faces = face_cascade.detectMultiScale(img_return, 1.3, 5)
     for x, y, w, h in faces:
